@@ -17,7 +17,8 @@ vim.o.swapfile = false
 vim.o.backup = false
 -- vim.opt.undofile = true
 vim.o.undodir = os.getenv("HOME") .. "/.vim/undodir"
-
 -- vim.opt.scrolloff = 8
 -- vim.o.updatetime = 50
--- vim.opt.rocks.hererocks= false
+-- vim.o.lpl = true
+-- Auto changes the directory for the nvim to point to current directory
+vim.o.autochdir = true
