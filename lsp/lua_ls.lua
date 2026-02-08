@@ -14,6 +14,7 @@ local root_markers2 = {
 ---@type vim.lsp.Config
 return {
 	cmd = { "lua-language-server" },
+	-- dependencies = { "folke/lazydev.nvim" },
 	filetypes = { "lua" },
 	root_markers = vim.fn.has("nvim-0.11.3") == 1 and { root_markers1, root_markers2, { ".git" } }
 		or vim.list_extend(vim.list_extend(root_markers1, root_markers2), { ".git" }),
@@ -34,3 +35,14 @@ return {
 		},
 	},
 }
+
+-- return {
+-- 	cmd = { "lua-language-server" },
+-- 	root_markers = { ".luarc.json", ".git" }, -- Native root detection
+-- 	settings = {
+-- 		Lua = {
+-- 			diagnostics = { globals = { "vim" } },
+-- 			workspace = { checkThirdParty = false },
+-- 		},
+-- 	},
+-- }

@@ -26,10 +26,6 @@ require("lazy").setup({
 	spec = {
 		-- import your plugins
 		{ import = "plugins" },
-		-- import specific Mason config
-		{ import = "config.mason" },
-		-- import the lspconfig file
-		-- { import = "config.lspconfig" },
 	},
 	rocks = {
 		enabled = false,
