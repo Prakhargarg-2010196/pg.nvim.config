@@ -26,6 +26,10 @@ require("lazy").setup({
 	spec = {
 		-- import your plugins
 		{ import = "plugins" },
+		-- import specific Mason config
+		{ import = "config.mason" },
+		-- import the lspconfig file
+		-- { import = "config.lspconfig" },
 	},
 	rocks = {
 		enabled = false,
@@ -33,7 +37,6 @@ require("lazy").setup({
 
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
-	--	install = { colorscheme = { "habamax" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
 	performance = {

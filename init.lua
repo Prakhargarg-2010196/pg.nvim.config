@@ -1,4 +1,4 @@
-require("opts")
-require("keymaps")
-require("core.lazy")
-require("core.lspconfig")
+require("config.opts")
+require("config.keymaps")
+require("config.lazy")
+require("config.lspconfig")
