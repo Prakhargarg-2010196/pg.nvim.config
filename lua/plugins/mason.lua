@@ -1,6 +1,7 @@
 return {
 	"williamboman/mason.nvim",
 	dependencies = {
+		"neovim/nvim-lspconfig",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
